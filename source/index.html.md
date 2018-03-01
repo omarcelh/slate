@@ -13,6 +13,7 @@ includes:
     - apis/airlines
     - apis/airports
     - apis/bookings
+    - apis/flights
     - apis/passengers
     - errors
 
