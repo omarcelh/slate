@@ -13,9 +13,11 @@ includes:
     - apis/airlines
     - apis/airports
     - apis/bookings
+    - apis/booking_status_types
     - apis/flights
     - apis/itineraries
     - apis/users
+    - apis/wlpsqueue_status_types
     - apis/passengers
     - errors
 
