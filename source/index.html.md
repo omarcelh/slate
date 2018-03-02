@@ -17,6 +17,7 @@ includes:
     - apis/flights
     - apis/itineraries
     - apis/users
+    - apis/wlpsqueues
     - apis/wlpsqueue_status_types
     - apis/passengers
     - errors
