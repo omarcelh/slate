@@ -15,6 +15,7 @@ includes:
     - apis/bookings
     - apis/flights
     - apis/itineraries
+    - apis/users
     - apis/passengers
     - errors
 
