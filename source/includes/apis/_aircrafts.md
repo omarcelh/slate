@@ -73,7 +73,7 @@ This endpoint retrieves all aircrafts.
 
 ### HTTP Request
 
-`GET http://example.com/api/v1/aircrafts`
+`GET http://35.224.189.34:3000/api/v1/aircrafts`
 
 ## Get a Specific Aircraft
 
@@ -92,7 +92,7 @@ This endpoint retrieves a specific aircraft.
 
 ### HTTP Request
 
-`GET http://example.com/aircrafts/<IataCode>`
+`GET http://35.224.189.34:3000/aircrafts/<IataCode>`
 
 ### URL Parameters
 

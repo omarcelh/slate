@@ -58,7 +58,7 @@ This endpoint retrieves all passengers.
 
 ### HTTP Request
 
-`GET http://example.com/api/v1/passengers`
+`GET http://35.224.189.34:3000/api/v1/passengers`
 
 ## Get a Specific Passenger
 
@@ -119,7 +119,7 @@ This endpoint retrieves a specific passenger.
 
 ### HTTP Request
 
-`GET http://example.com/passengers/<ID>`
+`GET http://35.224.189.34:3000/passengers/<ID>`
 
 ### URL Parameters
 
@@ -142,7 +142,7 @@ This endpoint deletes a specific passenger.
 
 ### HTTP Request
 
-`DELETE http://example.com/passengers/<ID>`
+`DELETE http://35.224.189.34:3000/passengers/<ID>`
 
 ### URL Parameters
 

@@ -10,7 +10,7 @@ This endpoint retrieves all models.
 
 ### HTTP Request
 
-`GET http://example.com/api/v1/models`
+`GET http://35.224.189.34:3000/api/v1/models`
 
 ## Get a Specific Model
 
@@ -25,7 +25,7 @@ This endpoint retrieves a specific model.
 
 ### HTTP Request
 
-`GET http://example.com/models/<ID>`
+`GET http://35.224.189.34:3000/models/<ID>`
 
 ### URL Parameters
 
@@ -48,7 +48,7 @@ This endpoint deletes a specific model.
 
 ### HTTP Request
 
-`DELETE http://example.com/models/<ID>`
+`DELETE http://35.224.189.34:3000/models/<ID>`
 
 ### URL Parameters
 
@@ -70,4 +70,4 @@ This endpoint creates a model entry.
 
 ### HTTP Request
 
-`POST http://example.com/models`
+`POST http://35.224.189.34:3000/models`

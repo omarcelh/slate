@@ -84,7 +84,7 @@ This endpoint retrieves all wlpsqueue status types.
 
 ### HTTP Request
 
-`GET http://example.com/api/v1/wlpsqueue_status_types`
+`GET http://35.224.189.34:3000/api/v1/wlpsqueue_status_types`
 
 ## Get a Specific WlpsqueueStatusType
 
@@ -107,7 +107,7 @@ This endpoint retrieves a specific wlpsqueue status type.
 
 ### HTTP Request
 
-`GET http://example.com/wlpsqueue_status_types/<tag>`
+`GET http://35.224.189.34:3000/wlpsqueue_status_types/<tag>`
 
 ### URL Parameters
 
@@ -130,7 +130,7 @@ This endpoint deletes a specific wlpsqueue status type.
 
 ### HTTP Request
 
-`DELETE http://example.com/wlpsqueue_status_types/<tag>`
+`DELETE http://35.224.189.34:3000/wlpsqueue_status_types/<tag>`
 
 ### URL Parameters
 
@@ -165,5 +165,5 @@ This endpoint creates a wlpsqueue status type entry.
 
 ### HTTP Request
 
-`POST http://example.com/wlpsqueue_status_types`
+`POST http://35.224.189.34:3000/wlpsqueue_status_types`
 

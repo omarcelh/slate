@@ -52,7 +52,7 @@ This endpoint retrieves all booking status types.
 
 ### HTTP Request
 
-`GET http://example.com/api/v1/booking_status_types`
+`GET http://35.224.189.34:3000/api/v1/booking_status_types`
 
 ## Get a Specific BookingStatusType
 
@@ -75,7 +75,7 @@ This endpoint retrieves a specific booking status type.
 
 ### HTTP Request
 
-`GET http://example.com/booking_status_types/<tag>`
+`GET http://35.224.189.34:3000/booking_status_types/<tag>`
 
 ### URL Parameters
 
@@ -98,7 +98,7 @@ This endpoint deletes a specific booking status type.
 
 ### HTTP Request
 
-`DELETE http://example.com/booking_status_types/<tag>`
+`DELETE http://35.224.189.34:3000/booking_status_types/<tag>`
 
 ### URL Parameters
 
@@ -133,5 +133,5 @@ This endpoint creates a booking status type entry.
 
 ### HTTP Request
 
-`POST http://example.com/booking_status_types`
+`POST http://35.224.189.34:3000/booking_status_types`
 

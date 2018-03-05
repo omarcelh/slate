@@ -163,7 +163,7 @@ This endpoint retrieves all airports.
 
 ### HTTP Request
 
-`GET http://example.com/api/v1/airports`
+`GET http://35.224.189.34:3000/api/v1/airports`
 
 ## Get a Specific Airport
 
@@ -191,7 +191,7 @@ This endpoint retrieves a specific airport.
 
 ### HTTP Request
 
-`GET http://example.com/airports/<IATACODE>`
+`GET http://35.224.189.34:3000/airports/<IATACODE>`
 
 ### URL Parameters
 
@@ -214,7 +214,7 @@ This endpoint deletes a specific airport.
 
 ### HTTP Request
 
-`DELETE http://example.com/airports/<ID>`
+`DELETE http://35.224.189.34:3000/airports/<ID>`
 
 ### URL Parameters
 
@@ -263,5 +263,5 @@ This endpoint creates a airport entry.
 
 ### HTTP Request
 
-`POST http://example.com/airports`
+`POST http://35.224.189.34:3000/airports`
 

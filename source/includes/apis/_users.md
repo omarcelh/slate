@@ -27,7 +27,7 @@ This endpoint retrieves all users.
 
 ### HTTP Request
 
-`GET http://example.com/api/v1/users`
+`GET http://35.224.189.34:3000/api/v1/users`
 
 ## Get a Specific User
 
@@ -79,7 +79,7 @@ This endpoint retrieves a specific user.
 
 ### HTTP Request
 
-`GET http://example.com/users/<ID>`
+`GET http://35.224.189.34:3000/users/<ID>`
 
 ### URL Parameters
 
@@ -102,7 +102,7 @@ This endpoint deletes a specific user.
 
 ### HTTP Request
 
-`DELETE http://example.com/users/<ID>`
+`DELETE http://35.224.189.34:3000/users/<ID>`
 
 ### URL Parameters
 
@@ -148,4 +148,4 @@ This endpoint creates a user entry.
 
 ### HTTP Request
 
-`POST http://example.com/users`
+`POST http://35.224.189.34:3000/users`

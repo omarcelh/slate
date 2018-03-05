@@ -25,7 +25,7 @@ This endpoint retrieves all flights.
 
 ### HTTP Request
 
-`GET http://example.com/api/v1/flights`
+`GET http://35.224.189.34:3000/api/v1/flights`
 
 ## Get a Specific Flight
 
@@ -84,7 +84,7 @@ This endpoint retrieves a specific flight.
 
 ### HTTP Request
 
-`GET http://example.com/flights/<ID>`
+`GET http://35.224.189.34:3000/flights/<ID>`
 
 ### URL Parameters
 

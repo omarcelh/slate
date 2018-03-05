@@ -103,7 +103,7 @@ This endpoint retrieves all airlines.
 
 ### HTTP Request
 
-`GET http://example.com/api/v1/airlines`
+`GET http://35.224.189.34:3000/api/v1/airlines`
 
 ## Get a Specific Airline
 
@@ -127,7 +127,7 @@ This endpoint retrieves a specific airline.
 
 ### HTTP Request
 
-`GET http://example.com/airlines/<ID>`
+`GET http://35.224.189.34:3000/airlines/<ID>`
 
 ### URL Parameters
 

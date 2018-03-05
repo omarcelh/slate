@@ -21,7 +21,7 @@ This endpoint retrieves all wlpsqueues.
 
 ### HTTP Request
 
-`GET http://example.com/api/v1/wlpsqueues`
+`GET http://35.224.189.34:3000/api/v1/wlpsqueues`
 
 ## Get a Specific Wlpsqueue
 
@@ -188,7 +188,7 @@ This endpoint retrieves a specific wlpsqueue.
 
 ### HTTP Request
 
-`GET http://example.com/wlpsqueues/<ID>`
+`GET http://35.224.189.34:3000/wlpsqueues/<ID>`
 
 ### URL Parameters
 
@@ -211,7 +211,7 @@ This endpoint deletes a specific wlpsqueue.
 
 ### HTTP Request
 
-`DELETE http://example.com/wlpsqueues/<ID>`
+`DELETE http://35.224.189.34:3000/wlpsqueues/<ID>`
 
 ### URL Parameters
 
@@ -233,5 +233,5 @@ This endpoint creates a wlpsqueue entry.
 
 ### HTTP Request
 
-`POST http://example.com/wlpsqueues`
+`POST http://35.224.189.34:3000/wlpsqueues`
  -->

@@ -19,7 +19,7 @@ This endpoint retrieves all itineraries.
 
 ### HTTP Request
 
-`GET http://example.com/api/v1/itineraries`
+`GET http://35.224.189.34:3000/api/v1/itineraries`
 
 ## Get a Specific Itinerary
 
@@ -86,7 +86,7 @@ This endpoint retrieves a specific itinerary.
 
 ### HTTP Request
 
-`GET http://example.com/itineraries/<ID>`
+`GET http://35.224.189.34:3000/itineraries/<ID>`
 
 ### URL Parameters
 

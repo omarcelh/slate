@@ -31,7 +31,7 @@ This endpoint retrieves all bookings.
 
 ### HTTP Request
 
-`GET http://example.com/api/v1/bookings`
+`GET http://35.224.189.34:3000/api/v1/bookings`
 
 ## Get a Specific Booking
 
@@ -206,7 +206,7 @@ This endpoint retrieves a specific booking.
 
 ### HTTP Request
 
-`GET http://example.com/bookings/<ID>`
+`GET http://35.224.189.34:3000/bookings/<ID>`
 
 ### URL Parameters
 
@@ -229,7 +229,7 @@ This endpoint deletes a specific booking.
 
 ### HTTP Request
 
-`DELETE http://example.com/bookings/<ID>`
+`DELETE http://35.224.189.34:3000/bookings/<ID>`
 
 ### URL Parameters
 
@@ -439,4 +439,4 @@ This endpoint creates a booking entry.
 
 ### HTTP Request
 
-`POST http://example.com/bookings`
+`POST http://35.224.189.34:3000/bookings`
