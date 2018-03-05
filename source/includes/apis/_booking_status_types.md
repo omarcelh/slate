@@ -71,8 +71,6 @@ This endpoint retrieves all booking status types.
 
 This endpoint retrieves a specific booking status type.
 
-<aside class="notice">This includes the relations: [BookingStatusType Relation].</aside>
-
 ### HTTP Request
 
 `GET http://35.224.189.34:3000/booking_status_types/<tag>`

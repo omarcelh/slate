@@ -103,8 +103,6 @@ This endpoint retrieves all wlpsqueue status types.
 
 This endpoint retrieves a specific wlpsqueue status type.
 
-<aside class="notice">This includes the relations: [WlpsqueueStatusType Relation].</aside>
-
 ### HTTP Request
 
 `GET http://35.224.189.34:3000/wlpsqueue_status_types/<tag>`

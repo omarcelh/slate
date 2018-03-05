@@ -123,8 +123,6 @@ This endpoint retrieves all airlines.
 
 This endpoint retrieves a specific airline.
 
-<aside class="notice">This includes the relations: [Airline Relation].</aside>
-
 ### HTTP Request
 
 `GET http://35.224.189.34:3000/airlines/<ID>`
