@@ -44,8 +44,8 @@ This endpoint retrieves all bookings.
     "contact_person_id": 1,
     "itinerary_id": 1,
     "total_price": 100,
-    "created_at": "2018-02-20T06:11:15.841Z",
-    "updated_at": "2018-02-20T06:11:15.841Z",
+    "created_at": "2018-03-01T07:04:27.620Z",
+    "updated_at": "2018-03-01T07:04:27.620Z",
     "contact_person": {
         "id": 1,
         "name": "Octavianus Marcel Harjono",
@@ -53,9 +53,9 @@ This endpoint retrieves all bookings.
         "email": "octavianusmarcel12@gmail.com",
         "phone": "087836901995",
         "api_token": null,
-        "created_at": "2018-02-20T06:11:15.774Z",
-        "updated_at": "2018-02-20T06:11:15.774Z",
-        "password_digest": "$2a$10$MSJobx233lLeguce9zpb2ehdx9mmdaq1T6BrrxZg9wdivOD3fhM9K",
+        "created_at": "2018-03-01T07:04:27.558Z",
+        "updated_at": "2018-03-01T07:04:27.558Z",
+        "password_digest": "$2a$10$qapYKzJox49ftG4HbXskje76.3hx7d9oCbTv3YCYzYGhNnK6j8CGS",
         "remember_digest": null,
         "reset_digest": null,
         "reset_sent_at": null,
@@ -65,87 +65,47 @@ This endpoint retrieves all bookings.
         "id": 1,
         "currency_code": "IDR",
         "price_rule_id": 1,
-        "created_at": "2018-02-20T06:11:15.589Z",
-        "updated_at": "2018-02-20T06:11:15.589Z"
+        "created_at": "2018-03-01T07:04:27.390Z",
+        "updated_at": "2018-03-01T07:04:27.390Z"
     },
     "statuses": [
         {
-            "id": 10,
-            "tag": "rejected-c",
-            "name": "Check-in rejected",
-            "description": "Automatic check-in rejected; e-boarding pass cannot be obtained",
-            "created_at": "2018-02-24T09:00:00.000Z",
-            "updated_at": "2018-02-24T09:00:00.000Z"
-        },
-        {
-            "id": 9,
-            "tag": "rejected-a",
-            "name": "Payment rejected by airline",
-            "description": "Payment from user validated, but we cannot confirm payment to airline, therefore e-ticket cannot be obtained.",
-            "created_at": "2018-02-23T09:00:00.000Z",
-            "updated_at": "2018-02-23T09:00:00.000Z"
-        },
-        {
-            "id": 8,
-            "tag": "cancelled",
-            "name": "Cancelled",
-            "description": "User chooses “cancel” when status is “waiting for confirmation” or fails to respond until timeout. We request to cancel booking to the airline and offer seat to the next person in queue.",
-            "created_at": "2018-02-22T09:00:00.000Z",
-            "updated_at": "2018-02-22T09:00:00.000Z"
-        },
-        {
-            "id": 7,
-            "tag": "pay-timeout",
-            "name": "Payment time-out",
-            "description": "Payment hasn’t been made until time-out",
-            "created_at": "2018-02-21T09:00:00.000Z",
-            "updated_at": "2018-02-21T09:00:00.000Z"
-        },
-        {
-            "id": 6,
-            "tag": "b-pass-issued",
-            "name": "E-boarding pass issued",
-            "description": "Automatic check-in successful. Airline issued boarding pass",
-            "created_at": "2018-02-20T09:00:00.000Z",
-            "updated_at": "2018-02-20T09:00:00.000Z"
-        },
-        {
             "id": 5,
-            "tag": "ticket-issued",
-            "name": "E-ticket issued",
-            "description": "Airline issued e-ticket",
+            "tag": "pay-timeout",
+            "name": "Payment timed-out",
+            "description": "Initial state: customer hasn’t completed payment but runs out of time\nAction (WL-booking): cancel user’s booking (because payment time limit from airline might be longer)",
             "created_at": "2018-02-19T09:00:00.000Z",
             "updated_at": "2018-02-19T09:00:00.000Z"
         },
         {
             "id": 4,
-            "tag": "pay-v",
-            "name": "Payment validated",
-            "description": "Payment validated either automatically or manually. Confirm payment to airline.",
+            "tag": "eticket-issued",
+            "name": "E-ticket issued",
+            "description": "Init: e-ticket is received from airline and sent to customer via e-mail and app",
             "created_at": "2018-02-18T09:00:00.000Z",
             "updated_at": "2018-02-18T09:00:00.000Z"
         },
         {
             "id": 3,
-            "tag": "val-p",
-            "name": "Validating payment",
-            "description": "User confirms payment, not yet validated",
+            "tag": "pay-validated",
+            "name": "Payment validated",
+            "description": "Init: Payment validated either automatically or manually\nAction: System confirms payment to airline",
             "created_at": "2018-02-17T09:00:00.000Z",
             "updated_at": "2018-02-17T09:00:00.000Z"
         },
         {
             "id": 2,
-            "tag": "wait-p",
-            "name": "Waiting for payment",
-            "description": "For WL-booking: from “waiting for confirmation”, if user confirms, add more time to the remaining time from previous status",
+            "tag": "val-payment",
+            "name": "Validating payment",
+            "description": "Init: User confirms that they have completed payment (and uploaded PoP)\nInit: Payment is not yet validated manually or automatically",
             "created_at": "2018-02-16T09:00:00.000Z",
             "updated_at": "2018-02-16T09:00:00.000Z"
         },
         {
             "id": 1,
-            "tag": "wait-c",
-            "name": "Waiting for confirmation",
-            "description": "User gets seat confirmation from queue, expected to give readiness confirmation before automatically changed to “cancelled”  (there’s countdown)",
+            "tag": "wait-payment",
+            "name": "Waiting for payment",
+            "description": "Init (normal booking): User books flights\nInit (WL-booking): After user confirms to pay, add 7 more minutes to the countdown ",
             "created_at": "2018-02-15T09:00:00.000Z",
             "updated_at": "2018-02-15T09:00:00.000Z"
         }
@@ -387,9 +347,9 @@ ID | The ID of the booking to delete
     "statuses": [
         {
             "id": 1,
-            "tag": "wait-c",
-            "name": "Waiting for confirmation",
-            "description": "User gets seat confirmation from queue, expected to give readiness confirmation before automatically changed to “cancelled”  (there’s countdown)",
+            "tag": "wait-payment",
+            "name": "Waiting for payment",
+            "description": "Init (normal booking): User books flights\nInit (WL-booking): After user confirms to pay, add 7 more minutes to the countdown ",
             "created_at": "2018-02-15T09:00:00.000Z",
             "updated_at": "2018-02-15T09:00:00.000Z"
         }
